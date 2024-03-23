@@ -1,0 +1,43 @@
+{
+  "name": "react-input-checker",
+  "version": "1.0.0",
+  "description": "react input checker",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "tsc && node copy-assets.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "validator",
+    "password validator",
+    "react-input-checker",
+    "password checker",
+    "input checker"
+  ],
+  "author": "Sikiru Razak",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "ncp": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roscoericch/react-input-validator.git"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ]
+}
