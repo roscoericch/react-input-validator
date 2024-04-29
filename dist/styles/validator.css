@@ -2,99 +2,99 @@
   box-sizing: border-box;
 }
 
-.bg-white {
+.validator .bg-white {
   background-color: hsl(260deg 11% 85% / 29%);
 }
 
-.rounded-[5px] {
+.validator .rounded-[5px] {
   border-radius: 5px;
 }
 
-p,
+.validator p,
 ul {
   margin: 0;
   padding: 0;
 }
 
-.p-3 {
+.validator .p-3 {
   padding-left: 0.2rem;
   padding-right: 0.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.flex {
+.validator .flex {
   display: flex;
 }
-.flex-col {
+.validator .flex-col {
   flex-direction: column;
 }
-.items-center {
+.validator .items-center {
   align-items: center;
 }
 
-.justify-start {
+.validator .justify-start {
   justify-content: start;
 }
 
-.gap {
+.validator .gap {
   gap: 0.2rem;
 }
 
-.round {
+.validator .round {
   height: 13px;
   width: 13px;
 }
 
-.rounded-full {
+.validator .rounded-full {
   border-radius: 50%;
 }
 
-.text-[#252B33] {
+.validator .text-[#252B33] {
   color: #252b33;
 }
 
-.text-[#d01837] {
+.validator .text-[#d01837] {
   color: #d01837;
 }
 
-.text-12 {
+.validator .text-12 {
   font-size: 12px;
 }
 
-.font-[400] {
+.validator .font-[400] {
   font-weight: 400;
 }
-.bg-red {
+.validator .bg-red {
   background-color: #d90707;
 }
-.bg-orange {
+.validator .bg-orange {
   background-color: #e68f0d;
 }
-.bg-green {
+.validator .bg-green {
   background-color: #68d006;
 }
-.bg-red::-webkit-progress-value {
+.validator .bg-red::-webkit-progress-value {
   background-color: #d90707;
 }
 
-.bg-orange::-webkit-progress-value {
+.validator .bg-orange::-webkit-progress-value {
   background-color: #e68f0d;
 }
 
-.bg-green::-webkit-progress-value {
+.validator .bg-green::-webkit-progress-value {
   background-color: #68d006;
 }
 
-.bg-slate-300 {
+.validator .bg-slate-300 {
   background-color: #ccc;
 }
 
-.relative {
+.validator .relative {
   position: relative;
 }
 
-progress[value] {
+.validator progress[value] {
   /* Reset the default appearance */
   -webkit-appearance: none;
   appearance: none;
@@ -104,13 +104,13 @@ progress[value] {
   border-radius: 5px;
 }
 
-progress[value]::-webkit-progress-bar {
+.validator progress[value]::-webkit-progress-bar {
   background-color: #eee;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
-progress[value]::-webkit-progress-value {
+.validator progress[value]::-webkit-progress-value {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }

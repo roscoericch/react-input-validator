@@ -27,14 +27,14 @@ const ProgressValidator = ({
   return (
     <>
       {value && (
-        <div className="">
-          <span className="flex gap">
+        <div className="validator">
+          <span className="validator flex gap">
             {rules
               ?.filter((e) => e.rule.test(value))
               ?.map((e, i) => (
                 <progress
                   key={i}
-                  className={`${
+                  className={`validator ${
                     range <= 30
                       ? "bg-red"
                       : range < 100
@@ -50,13 +50,15 @@ const ProgressValidator = ({
               ?.map((e, i) => (
                 <progress
                   key={i}
-                  className={``}
+                  className={`validator `}
                   max="100"
                   value={e?.rule.test(value) ? "100" : "0"}
                 ></progress>
               ))}
           </span>
-          <p className="text-[#252B33] text-[12px] font-[400]">{message}</p>
+          <p className="validator text-[#252B33] text-[12px] font-[400]">
+            {message}
+          </p>
         </div>
       )}
     </>

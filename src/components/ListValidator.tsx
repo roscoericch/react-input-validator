@@ -14,15 +14,15 @@ const ListValidator = ({ rules, value }: { rules: rule[]; value: string }) => {
     <>
       {value &&
         (rules.length > 1 ? (
-          <ul className="bg-white rounded-[5px] p-3 flex flex-col gap">
+          <ul className="validator bg-white rounded-[5px] p-3 flex flex-col gap">
             {rules?.map((e, i) => (
-              <li key={i} className="flex items-center justify-start gap">
+              <li key={i} className="validator flex items-center justify-start gap">
                 <span
-                  className={`round rounded-full ${
+                  className={`validator round rounded-full ${
                     e.rule.test(value) ? "bg-green" : "bg-red"
                   }`}
                 ></span>
-                <p className="text-[#252B33] text-12 font-[400]">
+                <p className="validator  text-[#252B33] text-12 font-[400]">
                   {e?.message}
                 </p>
               </li>
@@ -33,7 +33,7 @@ const ListValidator = ({ rules, value }: { rules: rule[]; value: string }) => {
             {rules[0].rule.test(value) ? (
               <></>
             ) : (
-              <p className="text-[#d01837] text-[12px] font-[400]">
+              <p className="validator  text-[#d01837] text-[12px] font-[400]">
                 {rules[0]?.message}
               </p>
             )}
